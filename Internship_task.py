@@ -6,7 +6,8 @@ l=[]
 kl=[]
 s=[]
 d=[]
-reg_url='https://www.trustradius.com/reviews?q=knime'
+p=input("Enter the product to  search reviews for")
+reg_url='https://www.trustradius.com/reviews?q='+p
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.3'}
 m= Request(url=reg_url,headers=headers)
 ph=urlopen(m).read()
